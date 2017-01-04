@@ -15,7 +15,7 @@ parser.add_argument('-n', '--name', help='The profile name (Host in ssh.conf).',
 parser.add_argument('-t', '--target', help='The host name this profile connects to (Hostname in ssh.conf).', required=True)
 parser.add_argument('-p', '--port', help='The port this profile connects to (Host in ssh.conf).', type=int, default=22, required=False)
 parser.add_argument('-u', '--user', help='The login name this profile connects with (User in ssh.conf).', required=True)
-parser.add_argument('-i', '--identity-file', help='The ssh identity file this profile connects with (IdentityFile in ssh.conf).', type=argparse.FileType('r'), required=False)
+parser.add_argument('-i', '--identity-file', help='The ssh identity file this profile connects with (IdentityFile in ssh.conf).', required=False)
 parser.add_argument('-l', '--local-ip', help='The first local ip the remote port is forwarded to. This ip is incremented for each new remote host.', default='127.0.1.1', required=False)
 parser.add_argument('-o', '--output-file', help='The file where the ssh.config is written to.', type=argparse.FileType('w'), required=True)
 
