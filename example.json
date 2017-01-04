@@ -1,0 +1,9 @@
+[{
+  "ip":    "1.2.3.4",
+  "ports": [22, 80, 5432],
+  "names": ["example1", "example1.domain.test"]
+}, {
+  "ip":    "1.2.3.5",
+  "ports": [80, 8080],
+  "names": ["example2", "example2.domain.test"]
+}]
