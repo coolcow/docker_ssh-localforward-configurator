@@ -2,6 +2,8 @@ FROM python:latest
 
 MAINTAINER Jean-Michel Ruiz "mail@coolcow.org"
 
-COPY servicesToSshConf.py /tmp
+COPY servicesToSshConf.py /
 
-ENTRYPOINT ["/tmp/servicesToSshConf.py"]
+WORKDIR /tmp
+
+ENTRYPOINT ["/servicesToSshConf.py"]
